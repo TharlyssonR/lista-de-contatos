@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d34c4c;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+}
+
+h1{
+    text-align: center;
+}
+
+.area-input{
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+input{
+    padding: 8px;
+    width: 100%; 
+}
+
+button{
+    padding: 8px;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.btn-excluir{
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.btn-editar{
+    background-color: blue;
+    color: white;
+    border: none;
+}
