@@ -2,6 +2,7 @@ const nomeInput = document.getElementById("nome");
 const telefoneInput = document.getElementById("telefone");
 const botao = document.getElementById("adicionar");
 const lista = document.getElementById("lista-contatos");
+const buscaInput = document.getElementById("busca")
 
 botao.addEventListener("click", function(){
     const nome = nomeInput.value;
@@ -116,3 +117,19 @@ function carregarContatos(){
 }
 
 carregarContatos();
+
+buscaInput.addEventListener("input", function(){
+    const valor = buscaInput.value.toLowerCase();
+    const itens = lista.querySelectorAll("li");
+
+    itens.forEach(function(li){
+        const texto = li.firstChild.textContent.toLowerCase();
+
+        if(texto.includes(valor)){
+            li.style.display = "flex";
+        }else{
+            li.style.display = "none";
+        };
+
+    });
+});
